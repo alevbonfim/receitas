@@ -2,7 +2,7 @@
     $titulo = 'Eu vou fazer feijão';
     $titulo = mb_strtoupper($titulo);
     $lista = ['feijão', 'alho', 'sal', 'óleo'];
-    $foto_destaque = 'img/feijao.jpg';
+    $foto_destaque = get_template_directory_uri().'/img/feijao.jpg';
     //var_dump($lista);
 ?>
 <!DOCTYPE html>
