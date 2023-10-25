@@ -1,19 +1,14 @@
 <?php
 /* Template Name: Home */
 
+get_header();
+
 $posts_receita = get_posts();
 
 //var_dump($posts_receita);
 
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro código PHP</title>
-</head>
-<body>
+
     <h1>Home</h1>
     <?php
         foreach($posts_receita as $receita):
@@ -24,6 +19,8 @@ $posts_receita = get_posts();
         </a>
     <?php        
         endforeach;
+
+
+        get_footer();
     ?>
-</body>
-</html>
+    
